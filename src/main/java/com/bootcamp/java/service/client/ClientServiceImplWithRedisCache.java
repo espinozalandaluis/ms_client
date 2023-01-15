@@ -21,7 +21,7 @@ public class ClientServiceImplWithRedisCache extends ClientServiceImpl{
 
     @Value("${KEY_REDIS_NAME:clientresponse}")
     public void setKey(String KEY_REDIS_NAME) {
-        RedisConfig.key = KEY_REDIS_NAME;
+        ClientServiceImplWithRedisCache.key = KEY_REDIS_NAME;
     }
 
     @Autowired
